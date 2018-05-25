@@ -18,7 +18,7 @@ RUN ["yum", "install", "-y", "vim"]
 RUN ["mkdir", "react-sample"]
 RUN ["npm", "init", "-y"]
 RUN ["npm", "i", "react@16.2.0", "react-dom@16.2.0"]
+RUN ["npm", "i", "-D", "webpack@4.4.1", "webpack-cli@2.0.11"]
+COPY ./react-sample/package-lock.json package-lock.json
 
-RUN ["mkdir", "-p", "src/js", "src/css", "dist/js", "dist/css"]
-RUN ["touch", "src/js/app.js", "src/js/hello.js", "src/css/style.css", "index.html", "webpack.config.js"]
 VOLUME ["react-sample"]
