@@ -1,0 +1,4 @@
+appserver:
+  build: .
+  volumes:
+    - /Users/natsuki/Practice/frontend/react-sample:/nodejs/react-sample

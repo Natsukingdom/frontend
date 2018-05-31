@@ -1,9 +1,10 @@
 フロントエンドの技術の練習用リポジトリ
 
-# 環境構築手順覚書
 
-1. `docker` を 導入
-1. プロジェクトのルートディレクトリで、 `docker build` (名前付ける場合は適当につけること)
-1. そのイメージを `run -itv \`pwd\`:/nodejs/react-sample` する.
+dockerのインストールされている環境で下記のコマンドを入力すると実行環境へ入れる
+```
+docker-compose run appserver
+```
+
 
 以上
