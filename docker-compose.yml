@@ -1,4 +1,8 @@
 appserver:
   build: .
   volumes:
-    - /Users/natsuki/Practice/frontend/react-sample:/nodejs/react-sample
+    - ./react-sample:/nodejs/react-sample
+  ports:
+    - "3000:3000"
+  command: npm run start
+  tty: true
