@@ -7,12 +7,7 @@ docker-compose up appserver
 ```
 
 環境の構築
+（サーバのスタートも兼ねる)
 ```
 docker-compose up
-```
-
-サーバーのスタート
-```docker
-$ docker exec frontend_appserver_1 /bin/bash
-$ npm run start
 ```
