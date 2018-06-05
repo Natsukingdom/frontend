@@ -19,4 +19,3 @@ COPY ./react-sample/package.json /nodejs/react-sample/package.json
 RUN npm i
 
 EXPOSE 3000
-

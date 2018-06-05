@@ -1,8 +1,12 @@
-appserver:
-  build: .
-  volumes:
-    - ./react-sample:/nodejs/react-sample
-  ports:
-    - "3000:3000"
-  command: npm run start
-  tty: true
+version: '3'
+services:
+  appserver:
+    build:
+      context: ./appserver
+    volumes:
+      - ./appserver/react-sample:/nodejs/react-sample
+      - ./appserver/nodejs/react-sample/node_modules # 上のマウントで隠されるので再度見えるようにしてあげる。
+    ports:
+      - "3000:3000"
+    command: npm run start
+    tty: true
